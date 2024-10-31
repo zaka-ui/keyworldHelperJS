@@ -111,11 +111,9 @@ const History = () => {
   */
 
   const downloadCSV = (item, filename) => {
-    //console.log(item);
     
     // Parse the CSV string into an array of keyword objects
     const csvData = item.csv.split('\n').slice(3); // Assuming the first three lines are headers
-    console.log(csvData);
     
     const results = csvData.map(row => {
         const columns = row.split(',');

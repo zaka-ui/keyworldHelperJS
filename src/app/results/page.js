@@ -239,8 +239,6 @@ export default function Results() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
-  //log resuts
-  console.log(results);
   
   //popup
   const showError = (message) => {
